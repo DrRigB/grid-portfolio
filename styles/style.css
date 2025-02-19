@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    line-height: 1.6;
+    
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "bio bio"
+        "projects projects"
+        "contact contact";
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.bio {
+    grid-area: bio;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+
+.projects {
+    grid-area: projects; 
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    display: grid; 
+    grid-template-rows: (500px, 1fr); 
+    gap: 20px;
+}
+.projects h2 {
+    margin: 0;
+    
+}
+
+.project1, .project2, .project3 {
+    background-color: #444; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+
+.contact {
+    grid-area: contact;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "bio"
+            "projects"
+            "contact";
+    }
+}
+img {
+    max-width: 500px;
+}
+a {
+    color: white;
+
+}
+a:hover {
+    color:rgb(76, 150, 211);
+}
+.project3 img {
+    max-height: 700px;
+    max-width: 700px;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px;
+    background-color:crimson;
+    color:black;
+    text-align: center;
+    border-radius: 10px;
+    gap: 10px;
+    text-decoration: none;
+}
+a.button:hover {
+    background-color: rgb(230, 90, 118);
+}
